@@ -1,7 +1,10 @@
 using Discord;
 using Discord.Commands;
+using System.Net.Http;
 using System.Threading.Tasks;
 using WhalesFargo.Services;
+using System.Linq;
+using System;
 
 namespace WhalesFargo.Modules
 {
@@ -16,6 +19,7 @@ namespace WhalesFargo.Modules
     {
         // Private variables
         private readonly ChatService m_Service;
+        static readonly HttpClient client = new HttpClient();
 
         // Dependencies are automatically injected via this constructor.
         // Remember to add an instance of the service.
@@ -55,6 +59,8 @@ namespace WhalesFargo.Modules
         {
             await m_Service.ClearMessagesAsync(Context.Guild, Context.Channel, Context.User, num);
         }
+
+        
     }
 }
 

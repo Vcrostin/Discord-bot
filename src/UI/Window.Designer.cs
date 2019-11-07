@@ -84,7 +84,6 @@
             this.ConnectionToken.Name = "ConnectionToken";
             this.ConnectionToken.Size = new System.Drawing.Size(215, 21);
             this.ConnectionToken.TabIndex = 6;
-            this.ConnectionToken.Text = "BotToken.txt";
             this.ConnectionToken.TextChanged += new System.EventHandler(this.ConnectionToken_TextChanged);
             // 
             // ConnectionButton
